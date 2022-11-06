@@ -1,0 +1,26 @@
+
+client --> server --> dbServer 
+
+
+client --> server -->inServer 
+                  -->usaServer 
+
+nTier  
+
+
+tools 
+
+	ide eclipse 
+	browser 
+	server - apache tomcat 
+	db  - mysql 
+
+
+
+server -- computer -> jdk jre -> tomcat -> webapp- > war ->bin start
+
+windows 
+linux 
+mac 
+
+-------------------------------
