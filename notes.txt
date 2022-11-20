@@ -24,3 +24,73 @@ linux
 mac 
 
 -------------------------------
+
+servlet 
+
+class 
+
+thread?
+class A extends Thread{
+
+}
+
+MVC design pattern -> model - view - controller 
+
+controller 
+Servlet -> interface 
+
+
+	Servlet  - servlet-api.jar 
+	GenericServlet 
+	HttpServlet 
+	
+1) class extends HttpServlet
+2) override -> service
+3) web.xml -> mapping   
+
+right click on project -> properties ->java build path -> lib tab ->  add external jar -> browse to the 
+apachetomcat/lib -> select servlet-api.jar -> order and export tab -> select all -> apply close -> done 
+
+
+javax -> 
+
+for each feature / functionality we need to create servlet 
+
+
+
+
+
+java - html 
+
+jsp -> java server pages , java servlet page 
+
+html + java 
+
+
+	scriptlet 
+	<%
+		//scriptlet 
+		int a = 10;
+		out.print(a + "<Br>");
+
+		Date d = new Date();
+		out.print(d);
+	%>
+
+
+	expression 
+	<br>
+	<%=a%>
+	<br>
+	<%=d%>
+	
+	
+	
+1) <% %> scriptlet 
+2) <%=  %> expression
+3) <%! %> declaration
+	
+
+
+
+
