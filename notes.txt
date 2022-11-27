@@ -91,6 +91,37 @@ html + java
 3) <%! %> declaration
 	
 
+HTML -> X java -> print ? 
+ 
+servlet -> validation -> error set -> Signup.html -> key get 
+
+servlet -> validation -> error set -> Signup.jsp -> key get 
+
+servlet -> jsp => hard coded -> reqest.setAttribute()
+
+jsp has 9 implicit object -> 1) request 2) out 
+
+
+js cookie -> access ! 
+
+FrontEnd -> js disable -> 
+
+BackEnd ->  
+
+-------------------
+										
+										
+50		SignupServlet		Server	tomcat	web.xml 		SignupServlet		
+				50 request 		SignupServlet 				
+										
+							1	load class		
+							2	create instance	thread	
+						1	3	init( )	db open 	Third party api 
+						n	4	service( )		
+						1	5	destroy() 	db close 	close 
+
+
+-------------------
 
 
 
