@@ -64,14 +64,26 @@ public class Validators {
 
 	}
 
+	public static boolean isValidPassword(String pwd) {
+
+		Pattern p = Pattern.compile("^(?=.*[a-z])(?=.\"*[A-Z])+$");
+		Matcher m = p.matcher(pwd);
+
+		return m.matches();
+
+//		return pwd.matches("(?=.*[a-z])");
+
+	}
+
 	public static void main(String[] args) {
-		System.out.println(Validators.isAlpha("royal"));// + ? * .
-		System.out.println(Validators.isAlpha("royal1"));// +* 0 N
-		System.out.println(Validators.isAlpha("1royal"));
-		System.out.println(Validators.isAlpha("Royal"));
-		System.out.println(Validators.isAlpha("roy al"));
-		System.out.println(Validators.isAlpha("r"));
-		allMixUsingPatternMatcher();
-		main(null);
+//		System.out.println(Validators.isAlpha("royal"));// + ? * .
+//		System.out.println(Validators.isAlpha("royal1"));// +* 0 N
+//		System.out.println(Validators.isAlpha("1royal"));
+//		System.out.println(Validators.isAlpha("Royal"));
+//		System.out.println(Validators.isAlpha("roy al"));
+//		System.out.println(Validators.isAlpha("r"));
+//		allMixUsingPatternMatcher();
+//		main(null);
+		System.out.println(isValidPassword("aAasdsd"));
 	}
 }
