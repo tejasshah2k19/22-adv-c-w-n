@@ -36,15 +36,15 @@
 
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
-	<servlet-class>com.controller.LoginServlet</servlet-class>
-	<init-param>
-		<param-name>email</param-name>
-		<param-value>admin@gmail.com</param-value>
-	</init-param>
-	<init-param>
-		<param-name>password</param-name>
-		<param-value>admin</param-value>
-	</init-param>
+		<servlet-class>com.controller.LoginServlet</servlet-class>
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>admin@gmail.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>admin</param-value>
+		</init-param>
 
 	</servlet>
 	<servlet-mapping>
@@ -53,7 +53,23 @@
 	</servlet-mapping>
 
 
+	<filter>
+		<filter-name>AddBookValidatorFilter</filter-name>
+		<filter-class>com.filter.AddBookValidatorFilter</filter-class>
+	</filter>
 
+	<filter-mapping>
+		<filter-name>AddBookValidatorFilter</filter-name>
+		<url-pattern>/AddBookServlet</url-pattern>
+	</filter-mapping>
 
+	<filter>
+		<filter-name>AddBookFormatFilter</filter-name>
+		<filter-class>com.filter.AddBookFormatFilter</filter-class>
+	</filter>
 
+	<filter-mapping>
+		<filter-name>AddBookFormatFilter</filter-name>
+		<url-pattern>/AddBookServlet</url-pattern>
+	</filter-mapping>
 </web-app>

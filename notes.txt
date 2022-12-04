@@ -166,7 +166,32 @@ Registration.jsp
 
 
 
+------------------------
+jsp -> java servlet page  / java server pages
 
+servlet container / apache tomcat / web server 
+
+.jsp -> 
+1) translation   .jsp -> .java 
+2) compilation	 .java -> .class 
+3) load class
+4) create instance
+5) jspInit()
+6) _jspService()  [ method prfix _ => you are not allowed to override this method ] 
+7) jspDestroy()
+
+
+M : data  -> bean dao 
+V : view  -> jsp 
+C : controller -> Servlet 
+
+--------------------------------
+
+AddBook.jsp 
+	Validation
+	directly navigate 
+	chrome browser  
+			
 
 
 
