@@ -192,11 +192,75 @@ AddBook.jsp
 	directly navigate 
 	chrome browser  
 			
+-----------------------------------------------------------
+
+Signup.jsp -> email ,password submit -> server -> request 
+
+headers 
+1) request header**** 
+2) response header## 
+
+
+----------------------------------------------------
+
+
+1) cookie - client - browser 
+2) session - server - memory  [ private security ] 
+
+
+
+Login.jsp  [ email password ] 
+Signup.jsp  [ firstName email password userId ]
+
+superadmin -> admin@email.com. admin@password 
+	admin can add remove update product 
+	
+users -> {f,e,p,u} * 5 
+products -> {productId,name,price,qty }  
+ 
+Login.jsp =>Home , Welcome , RamDev 
+ 
+ 	TV 
+ 	5000
+ 	AddToCart
+ 	
+ 	Iphone 
+ 	6000
+ 	AddToCart 
+ 	
+Logout -> Login.jsp
+-----------------------------------------------------------------------------------
+
+com 
+
+	bean 
+		UserBean {pojo}{java bean}
+	controller 
+	dao 
+		UserDao 
+				users 
+		ProductDao [ c r u d ]
+				products [ image ]
+				
+ArrayList<UserBean> 
+
+
+-----------------------------------------------------------------------------------
 
 
 
 
-
+ 	
+ 	
+ 	
+ 	
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 

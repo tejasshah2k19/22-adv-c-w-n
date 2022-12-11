@@ -1,75 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://java.sun.com/xml/ns/javaee"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	id="WebApp_ID" version="2.5">
-	<display-name>22-adv-c-w-n</display-name>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
-	</welcome-file-list>
-
-
-	<servlet>
-		<servlet-name>SignupServlet</servlet-name>
-		<servlet-class>com.controller.SignupServlet</servlet-class>
-	</servlet>
-
-	<servlet-mapping>
-		<servlet-name>SignupServlet</servlet-name>
-		<url-pattern>/SignupServlet</url-pattern>
-	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>AddProductServlet</servlet-name>
-		<servlet-class>com.controller.AddProductServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>AddProductServlet</servlet-name>
-		<url-pattern>/AddProductServlet</url-pattern>
-	</servlet-mapping>
-
-
-	<servlet>
-		<servlet-name>LoginServlet</servlet-name>
-		<servlet-class>com.controller.LoginServlet</servlet-class>
-		<init-param>
-			<param-name>email</param-name>
-			<param-value>admin@gmail.com</param-value>
-		</init-param>
-		<init-param>
-			<param-name>password</param-name>
-			<param-value>admin</param-value>
-		</init-param>
-
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>LoginServlet</servlet-name>
-		<url-pattern>/LoginServlet</url-pattern>
-	</servlet-mapping>
-
-
-	<filter>
-		<filter-name>AddBookValidatorFilter</filter-name>
-		<filter-class>com.filter.AddBookValidatorFilter</filter-class>
-	</filter>
-
-	<filter-mapping>
-		<filter-name>AddBookValidatorFilter</filter-name>
-		<url-pattern>/AddBookServlet</url-pattern>
-	</filter-mapping>
-
-	<filter>
-		<filter-name>AddBookFormatFilter</filter-name>
-		<filter-class>com.filter.AddBookFormatFilter</filter-class>
-	</filter>
-
-	<filter-mapping>
-		<filter-name>AddBookFormatFilter</filter-name>
-		<url-pattern>/AddBookServlet</url-pattern>
-	</filter-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>22-adv-c-w-n</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>com.controller.SignupServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/SignupServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>com.controller.AddProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/AddProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.controller.LoginServlet</servlet-class>
+    <init-param>
+      <param-name>email</param-name>
+      <param-value>admin@gmail.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>admin</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>AddBookValidatorFilter</filter-name>
+    <filter-class>com.filter.AddBookValidatorFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AddBookValidatorFilter</filter-name>
+    <url-pattern>/AddBookServlet</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>AddBookFormatFilter</filter-name>
+    <filter-class>com.filter.AddBookFormatFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AddBookFormatFilter</filter-name>
+    <url-pattern>/AddBookServlet</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PrintRequstHeadersServlet</display-name>
+    <servlet-name>PrintRequstHeadersServlet</servlet-name>
+    <servlet-class>com.controller.PrintRequstHeadersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrintRequstHeadersServlet</servlet-name>
+    <url-pattern>/PrintRequstHeadersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddCookieServlet</display-name>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <servlet-class>com.controller.AddCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddCookieServlet</servlet-name>
+    <url-pattern>/AddCookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PrintCookieServlet</display-name>
+    <servlet-name>PrintCookieServlet</servlet-name>
+    <servlet-class>com.controller.PrintCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrintCookieServlet</servlet-name>
+    <url-pattern>/PrintCookieServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
