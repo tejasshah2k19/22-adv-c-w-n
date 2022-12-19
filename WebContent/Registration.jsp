@@ -17,7 +17,6 @@
 	<%
 		String error = (String) request.getAttribute("error");
 		String firstNameError = (String) request.getAttribute("firstNameError");
-		String emailError = (String) request.getAttribute("emailError");
 		String passwordError = (String) request.getAttribute("passwordError");
 	%>
 
@@ -26,8 +25,9 @@
 		FirstName: <input type="text" name="firstName" /> <span class="error">
 			<%=firstNameError == null ? "" : firstNameError%>
 		</span> <br> <br> Email : <input type="text" name="email">
-		<%=emailError == null ? "" : emailError%>
-		<br> <br> Password: <input type="password" name="password">
+
+		${emailError} <br> <br> Password: <input type="password"
+			name="password">
 		<%=passwordError == null ? "" : passwordError%>
 		<br> <br> <input type="submit" value="Signup" />
 
