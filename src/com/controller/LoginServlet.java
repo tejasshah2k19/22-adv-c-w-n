@@ -35,7 +35,7 @@ public class LoginServlet extends HttpServlet {
 //		ServletConfig config = getServletConfig();
 //		String cEmail = config.getInitParameter("email");
 //		String cPassword = config.getInitParameter("password");
-
+		response.sendRedirect("Home.jsp");
 	}
 
 }

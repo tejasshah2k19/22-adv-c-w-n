@@ -299,7 +299,58 @@ cart -> remove
  					</session-config>
  	
  	default -> web.xml -> programming ->
- 	 	
+ --------------------------------------------------
+ server ->start-> aws | log | googlemap -> connection open 
+server ->stop->  aws | log | googlemap -> connection close
+
+
+ friday  -> server shutdown  
+listener -> listen ->event -> act | task 
+
+
+
+request 
+response
+session
+XXXXX
+
+implementation:- 
+1) XXXListener implements XXX 
+2) override : logic 
+3) mapping -> web.xml 
+
+---->  5500 user online 
+---->  counter -> 4
+
+
+sessioncreated - ++
+sessiondestroyed - -- 
+
+  
+------------------------------------------------------------
+
+Scope -> 
+
+1) page    [ X ] 
+2) request [ X -> Y ]
+3) session [ X -> Y , Z, T , K ] [ user specific ] 
+4) application [ X -> Y , Z , T , K ] [ global - common for all users ] 
+  
+to set the value => setAttribute("key",value)
+to read that value = > getAttribute("key") 
+
+
+
+
+
+
+
+
+
+
+ 
+
+	 	
  	
  
  
