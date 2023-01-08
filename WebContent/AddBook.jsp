@@ -1,3 +1,4 @@
+<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -16,6 +17,8 @@
 		String qtyValue = (String) request.getAttribute("qtyValue");
 		String priceValue = (String) request.getAttribute("priceValue");
 	%>
+
+ 
 	<form method="post" action="AddBookServlet">
 		Name : <input type="text" name="bname"
 			value="<%=bookNameValue == null ? "" : bookNameValue%>" />

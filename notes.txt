@@ -339,16 +339,44 @@ Scope ->
 to set the value => setAttribute("key",value)
 to read that value = > getAttribute("key") 
 
+-----------------------------------------
+	reusable web compoenent- inclusion 
+	
+1) static inclusion
+2) dynamic inclusion 
 
 
+header.jsp  15line 
 
+A.jsp  10line  
+	include header.jsp static 
+	25 line 
+	
+B.jsp 10line 
+	include header.jsp dynamic 
 
+-----------------------------------------
 
+EL - expression language 
 
+jsp -> print 
 
+${requestScope.error}
+${sessionScope.error}
+${error} page - request - session - application 
+-----------------------------------------
 
 
  
+1) 1 2 3 4 5 servlet 
+2) servlet.xml 1 2 3 4 5 
+3) web.xml -> servlet.xml 
+
+EL function :=
+	1) class - logic
+	2) .tld 
+	3) .xml 
+	4) jsp import : use 
 
 	 	
  	
