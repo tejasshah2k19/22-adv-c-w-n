@@ -340,7 +340,7 @@ to set the value => setAttribute("key",value)
 to read that value = > getAttribute("key") 
 
 -----------------------------------------
-	reusable web compoenent- inclusion 
+	reusable web component- inclusion 
 	
 1) static inclusion
 2) dynamic inclusion 
@@ -377,13 +377,47 @@ EL function :=
 	2) .tld 
 	3) .xml 
 	4) jsp import : use 
+-----------------------------------------
 
-	 	
- 	
+
+ frogetpassword 
  
+-----------------------------------------
+scope :- page, request ,session, application 
+-----------------------------------------
+<%int a=90;%>
+
+
+jstl-> 
+
+java standard tag library  
  
- 
- 
+<set>
+
+<out>
+
+<if>
+
+<foreach>
+
+.......
+
+
+5:->
+1) core*** 
+2) xml 
+3) sql
+4) format 
+5) function 
+
+
+1) jstl-jar
+2) project link
+3) import and use
+
+
+
+
  
  
  
