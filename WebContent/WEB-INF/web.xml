@@ -96,16 +96,20 @@
 	<listener>
 		<listener-class>com.listener.ServerInitListener</listener-class>
 	</listener>
-	
+
 	<error-page>
 		<error-code>404</error-code>
 		<location>/404.jsp</location>
 	</error-page>
-	
+
 	<jsp-config>
 		<taglib>
-			<taglib-uri>myelfunction</taglib-uri>		
+			<taglib-uri>myelfunction</taglib-uri>
 			<taglib-location>/WEB-INF/elfunction.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>stag</taglib-uri>
+			<taglib-location>/WEB-INF/stag.tld</taglib-location>
 		</taglib>
 	</jsp-config>
 
