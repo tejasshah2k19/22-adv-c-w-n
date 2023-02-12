@@ -9,5 +9,17 @@
 		<name>date</name>
 		<tag-class>com.stag.DateTag</tag-class>
 		<body-content>empty</body-content>
-	</tag>	
+	</tag>
+	
+	
+	<tag>
+		<name>sqr</name>
+		<tag-class>com.stag.SqrTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>num</name>
+			<required>true</required>
+			<rtexpr-value>true</rtexpr-value>
+		</attribute>
+	</tag>
 </taglib>

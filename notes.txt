@@ -416,8 +416,78 @@ java standard tag library
 3) import and use
 
 
+--------------------
+
+customtag  -- userdefine tag 
+
+1) simple tag 
+2) classic tag 
 
 
+jsp-api.jar 
+
+
+1) class -> extends SimpleTagSupport 
+	logic -> doTag  
+2) tld -> tag ->  
+3) web.xml -> .tld 
+4) jsp use ->import--> 
+
+1)tag with  no body and no attribute
+
+<date>
+body 
+<b>tejas</b>
+
+empty 
+<hr>
+<br>
+
+
+2) tag with attribute 
+<sqr num="3"/>
+   
+
+ ---------------------------------
+ 
+ classic tag 
+ 
+ interface -> Tag 
+ TagSupport class 
+ 
+ 1) no body no attribute 
+ 2) attribute
+ 3) body 
+ 4) dynamic attribute*
+ 5) body - operation 
+ 6) loop 
+ 
+
+ 
+ 
+--------------------------------
+ 
+ 
+ 
+ <c:print count="5">Royal</c:print>
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
